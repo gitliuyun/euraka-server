@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: pay3-cloud-register
+  profiles:
+    active: local
+  cloud:
+    config:
+      profile: local
+      label: master
+
+---
+
+spring:
+  profiles: local
+  cloud:
+    config:
+      enabled: false
